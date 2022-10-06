@@ -4,10 +4,10 @@ import {
     BrowserRouter,
     Routes,
     Route,
-    Link,
 } from "react-router-dom";
-import MainPage from "./MainPage/MainPage";
-import PortfolioPage from "./MainPage/PortfolioPage";
+import MainPage from "./Pages/MainPage";
+import PortfolioPage from "./Pages/PortfolioPage";
+import ContactsPage from "./Pages/ContactsPage";
 
 
 function App() {
@@ -15,11 +15,11 @@ function App() {
         <div className="App">
             <BrowserRouter>
                 <Routes>
-                    <Route path="/" element={<MainPage />} />
-                    <Route path="/portfolio/*" element={<PortfolioPage />} />
+                    <Route path="/" element={<MainPage/>}/>
+                    <Route path="/portfolio" element={<PortfolioPage/>}/>
+                    <Route path="/contacts" element={<ContactsPage/>}/>
                 </Routes>
             </BrowserRouter>
-
         </div>
     );
 }

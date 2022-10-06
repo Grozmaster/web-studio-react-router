@@ -11,8 +11,8 @@ function Header(){
                     <nav className="header_menu">
                         <ul className="menu__list">
                             <li className="menu__list-item"><Link to ="/">Студия</Link></li>
-                            <li className="menu__list-item"><Link to ="portfolio">Портфолио</Link></li>
-                            <li className="menu__list-item"><a href="#">Контакты</a></li>
+                            <li className="menu__list-item"><Link to ="/portfolio">Портфолио</Link></li>
+                            <li className="menu__list-item"><Link to ="/contacts">Контакты</Link></li>
                         </ul>
                     </nav>
                     <div className="header__contacts">
