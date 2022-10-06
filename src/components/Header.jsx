@@ -1,6 +1,17 @@
 import {Link} from "react-router-dom";
+import {useState} from "react";
+import PopUp from "./PopUp";
 
 function Header(){
+
+    const[isPopUp,setIsPopUp] = useState('')
+    const changePopUp =()=>{
+        if(isPopUp===''){
+            setIsPopUp('active')
+        }else setIsPopUp('')
+
+    }
+
     return(
         <header className="header">
             <div className="container">
@@ -31,11 +42,12 @@ function Header(){
                         </div>
                     </div>
                     <div className="mobile__menu">
-                        <img className="mobile__menu--img" src="public/images/menu.svg" alt="mobile__menu"/>
+                        <img onClick={changePopUp} className="mobile__menu--img" src="/images/menu.svg" alt="mobile__menu"/>
                     </div>
                 </div>
 
             </div>
+            <PopUp isPopUp={isPopUp}/>
         </header>
     )
 }

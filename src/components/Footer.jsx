@@ -1,3 +1,4 @@
+import {Link} from "react-router-dom";
 
 function Footer() {
     return (
@@ -6,7 +7,7 @@ function Footer() {
 
                 <ul className="footer__contacts">
                     <li>
-                        <a className="footer__logo-link" href="./index.html">Web<span>Studio</span></a>
+                        <Link className="footer__logo-link" to="/">Web<span>Studio</span></Link>
                     </li>
                     <li>
                         <a className="footer__address-link" href="https://goo.gl/maps/ceR9nBu1ngvzuz5S7" target="_blank"
@@ -23,22 +24,22 @@ function Footer() {
                 <div className="footer__social">
                     <div className="h4__social">присоединяйтесь</div>
                     <div className="footer__social-links">
-                        <a href="#">
+                        <a href="https://www.instagram.com/">
                             <svg className="footer__social-icon">
                                 <use xlinkHref={'/images/symbol.svg#icon__instagram'}></use>
                             </svg>
                         </a>
-                        <a href="#">
+                        <a href="https://twitter.com/">
                             <svg className="footer__social-icon">
                                 <use xlinkHref="/images/symbol.svg#icon__twitter"></use>
                             </svg>
                         </a>
-                        <a href="#">
+                        <a href="https://www.facebook.com/">
                             <svg className="footer__social-icon">
                                 <use xlinkHref="/images/symbol.svg#icon__facebook"></use>
                             </svg>
                         </a>
-                        <a href="#">
+                        <a href="https://ua.linkedin.com/">
                             <svg className="footer__social-icon">
                                 <use xlinkHref="/images/symbol.svg#icon__linkedin"></use>
                             </svg>

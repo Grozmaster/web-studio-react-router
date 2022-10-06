@@ -520,6 +520,7 @@ body {
 
 .footer__subscribe {
   padding-top: 12px;
+
 }
 
 .h4__social {
@@ -617,6 +618,7 @@ body {
 
 .order__popup {
   display: none;
+  padding-top: 10px;
   margin: 0 auto;
   z-index: 5;
   width: 528px;
@@ -624,13 +626,14 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  max-height: 500px;
 
 }
 
 .order__popup-close {
   position: absolute;
-  top: 8px;
-  right: 8px;
+  top: 10px;
+  right: 25px;
   cursor: pointer;
 }
 
@@ -1184,7 +1187,7 @@ body {
   }
 
   .subscribe__input {
-    width: 93.75vw;
+    width: 83.75vw;
   }
 
   .subscribe__box {
